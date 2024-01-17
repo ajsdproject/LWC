@@ -1,0 +1,20 @@
+<template>
+   <lightning-card title="Simple Calculator" class="slds-var-m-around_medium" >
+    
+    <lightning-input name="input1" label="no1" onchange={handleChange}></lightning-input>
+    no1:{no1}
+    <lightning-input name="input2" label="no2" onchange={handleChange}></lightning-input>
+no2:{no2}<br/>
+    <lightning-button name="btnadd" variant="brand" label="ADD" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button name="btnsub" variant="brand" label="SUB" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button name="btnmul" variant="brand" label="MUL" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button name="btndiv" variant="brand" label="DIV" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button name="btnclr" variant="brand" label="CLEAR" onclick={handleClear} class="slds-m-left_x-small"></lightning-button>
+    
+
+    Answer:{result}
+   
+   
+</lightning-card>
+
+</template>

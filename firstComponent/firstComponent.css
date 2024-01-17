@@ -1,0 +1,14 @@
+div
+{
+    background: blue;
+    color:white
+}
+.mycustomdiv
+{
+background: blanchedalmond;
+color:green;
+padding: 20px;
+border: 5px solid greenyellow;
+margin: 20px;
+
+}

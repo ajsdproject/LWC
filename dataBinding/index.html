@@ -1,0 +1,27 @@
+<html>
+    <style>
+        p{
+            background-color: green;
+            font:White;
+
+        }
+    </style> 
+
+    <body>
+        <H1> Welcome</H1>
+        <p> Dom demo1</p>
+        <p> Dom demo2</p>
+        <p> Dom demo3</p>
+
+        <div id="host"></div>
+        <button onclick="handleClick()">Click</button>
+        <script>
+        const host = document.querySelector("#host")
+         const root = host.attachShadow({mode:'open'})
+         root.innerHTML = '<p>Hi Iam a Shadow para </p>';
+
+        
+        </script>
+
+    </body>
+ </html>

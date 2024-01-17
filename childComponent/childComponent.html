@@ -1,0 +1,33 @@
+<template>
+
+
+    <div class="slds-size_2-of-4">
+       <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Players
+           <lightning-carousel scroll-duration="5">    
+               <lightning-carousel-image
+                   src = {player.Image}
+                   header = {player.Name}
+                   description = {player.Description}
+                   alternative-text = "First card accessible description."
+                   href = "https://www.bcci.tv/players/6/rohit-sharma?platform=international&type=men">
+               </lightning-carousel-image>
+               <lightning-carousel-image
+                   src = {player.Image}
+                   header = {player.Name}
+                   description = {player.Description}
+                     alternative-text = "Second card accessible description."
+                     href = "https://www.bcci.tv/players/2/virat-kohli?platform=international&type=men">
+                 </lightning-carousel-image>
+                 <lightning-carousel-image
+                     src = {player.Image}
+                     header = {player.Name}
+                     description = {player.Description}
+                     alternative-text = "Third card accessible description."
+                     href = "https://www.bcci.tv/players/9/jasprit-bumrah?platform=international&type=men">
+                 </lightning-carousel-image>
+             </lightning-carousel>
+          </div>
+       </div>
+    
+ </template>
+ 

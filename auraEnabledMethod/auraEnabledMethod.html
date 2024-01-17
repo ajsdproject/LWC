@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="LDS demo">
+        <lightning-combobox
+            name="RatingBox"
+            label="Rating"
+            value={value}
+            placeholder="Select Rating"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+    <p>Selected value is: {value}</p>
+        <div class="slds-var-m-around_medium">
+            <template if:true={accountList}>
+                <template for:each={accountList} for:item="account">
+                    <div class="slds-box slds-var-m-around_medium" key={account.Id}>
+                        <p>
+                            Name : {account.Name}
+                        </p>
+                        <p>
+                            Industry:{account.Industry}
+                        </p>
+                        <p>
+                            Rating:{account.Rating}
+                        </p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

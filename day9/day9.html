@@ -1,0 +1,18 @@
+<template>
+  
+
+   <lightning-card class="slds-var-m-around_medium" title="Product Info">
+       <lightning-input label="Enter Stock" name="numStock" onchange={handleChange}></lightning-input>
+       <template if:true={isShow}>
+           Product Details : <br>
+           Product Name : {product.name}<br>
+           Product Price : {product.price}<br>
+           Product Stock : {product.stock}
+       </template>
+
+       <template if:false={isShow}>
+           No Stock available...
+           
+</template>
+   </lightning-card>
+</template>
